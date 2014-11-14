@@ -1,0 +1,148 @@
+.cirlceContainer {
+	margin: 60px auto;
+	position: relative;
+  -webkit-transform: scale(.6667);
+  background: #fff;
+}
+
+.cirlceContainer,
+.circleFront,
+.circleBack {
+	width: 60px;
+	height: 60px;
+
+}
+
+.circleFront,
+.circleBack
+ {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;      
+}
+
+.circleFront {
+	z-index: 2;
+  border: 12px solid #000;
+  -webkit-transform: rotate(45deg);
+  border-radius: 30px;
+  background-clip: padding-box;
+  
+}
+
+.circleBack {
+	z-index: 1;
+  border-left: 12px solid #000;
+  border-top: 12px solid #000;
+  border-right: 12px solid #fff;
+  border-bottom: 12px solid #fff;
+  -webkit-transform: rotate(45deg);
+  border-radius: 30px;
+}
+
+@keyframes rotateFront
+{
+	0%   	{ transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	24.9% { transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px; }
+	25%  	{ transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	49.9% { transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	50%   { transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px;}
+	74.9% {transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	75%  	{transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	99.9% {transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	100% 	{transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+}
+
+@-moz-keyframes rotateFront 
+{
+	0%   	{-moz-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	24.9% {-moz-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px; }
+	25%  	{-moz-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	49.9% {-moz-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	50%   {-moz-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px;}
+	74.9% {-moz-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	75%  	{-moz-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	99.9% {-moz-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	100% 	{-moz-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+}
+
+@-webkit-keyframes rotateFront 
+{
+	0%   	{-webkit-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	24.9% {-webkit-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px; }
+	25%  	{-webkit-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	49.9% {-webkit-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	50%   {-webkit-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px;}
+	74.9% {-webkit-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	75%  	{-webkit-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	99.9% {-webkit-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	100% 	{-webkit-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+}
+
+@-o-keyframes rotateFront 
+{
+	0%   	{-o-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	24.9% {-o-transform: rotate(270deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px; }
+	25%  	{-o-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	49.9% {-o-transform: rotate(225deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	50%   {-o-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px;}
+	74.9% {-o-transform: rotate(45deg); border-color: #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000; border-width: 12px; border-radius: 30px; }
+	75%  	{-o-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	99.9% {-o-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+	100% 	{-o-transform: rotate(90deg); border-color: #fff; border-width: 0px 30px 0px 0px; border-radius: 0px;}
+}
+
+.circleFront {
+	animation: rotateFront 1.6s infinite linear;
+	-moz-animation: rotateFront 1.6s infinite linear; 
+	-webkit-animation: rotateFront 1.6s infinite linear; 
+	-o-animation: rotateFront 1.6s infinite linear; 
+	
+}
+
+@keyframes rotateBack
+{
+  0%   	{transform: rotate(45deg); }
+	49.9% {transform: rotate(405deg); }
+	50%   {transform: rotate(585deg); }
+	99.9% {transform: rotate(945deg);}
+	100% 	{transform: rotate(1125deg);}
+}
+
+@-moz-keyframes rotateBack /* Firefox */
+{
+  0%   	{-moz-transform: rotate(45deg); }
+	49.9% {-moz-transform: rotate(405deg); }
+	50%   {-moz-transform: rotate(585deg); }
+	99.9% {-moz-transform: rotate(945deg);}
+	100% 	{-moz-transform: rotate(1125deg);}
+}
+
+@-webkit-keyframes rotateBack {
+  0%   	{-webkit-transform: rotate(45deg); }
+	49.9% {-webkit-transform: rotate(405deg); }
+	50%   {-webkit-transform: rotate(585deg); }
+	99.9% {-webkit-transform: rotate(945deg);}
+	100% 	{-webkit-transform: rotate(1125deg);}
+}
+
+@-o-keyframes rotateBack /* Opera */
+{
+  0%   	{-o-transform: rotate(45deg); }
+	49.9% {-o-transform: rotate(405deg); }
+	50%   {-o-transform: rotate(585deg); }
+	99.9% {-o-transform: rotate(945deg);}
+	100% 	{-o-transform: rotate(1125deg);}
+}
+
+.circleBack {
+	animation: rotateBack 1.6s infinite linear;
+	-moz-animation: rotateBack 1.6s infinite linear; 
+	-webkit-animation: rotateBack 1.6s infinite linear; 
+	-o-animation: rotateBack 1.6s infinite linear; 
+
+}
